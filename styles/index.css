@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background: #fff6f6;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+html{
+    overflow: scroll;
+}
+nav{
+    width: 100%;
+    position: fixed;
+    opacity: 2.9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #050505;
+    padding: 10px 0 10px 0;
+    z-index: 1;
+}
+nav .brand,.buttons{
+    display: flex;
+    align-items: center;
+    padding: 0 20px 0 20px;
+}
+nav img{
+    margin-left: 10px;
+    height: 35px;
+}
+nav a{
+    text-decoration: none;
+    color: #fff;
+}
+nav li:hover{
+    border-bottom: #fff 1px solid;
+}
+.buttons li{
+    display: inline-block;
+    height: 100%;
+    padding: 10px;
+}
+.current{
+    cursor: default;
+    color:black;
+    background-color: #fff;
+}
+
+.contents{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner img{
+    width: 100%;
+}
+.overlay{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    width: 45%;
+    top: 58px;
+    height: 796px;
+    background-image: linear-gradient(to left, rgba(255,0,0,0), rgb(0, 0, 0));
+}
+.overlay h1{    
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20%;
+}
+.overlay p{
+    color: #fff;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 5%;
+    margin-top: 10%;
+}
+.overlay .learn-more{
+    border-radius: 8px;
+    background-color: black;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px 100px 20px 100px;
+    margin-top: 10%;
+}
+.overlay a:hover{
+    border-radius: 10px 0 10px 0;
+    border-bottom: #fff 3px solid;
+}
+.overlay span{
+    padding-bottom: 5px;
+    border-bottom: 3px solid #fff;
+}
+.previews{
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap:10px; 
+}
+.showcase{
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+}
+.showcase-pic{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10%;
+}
+.showcase-pic img{
+    height: 100px;
+    transition: transform .2s;
+}
+.showcase-pic img:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    border-bottom: rgb(0, 0, 0) 3px solid;
+}
+.title{
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #181818;
+    margin: 6%;
+}
+.branch{
+    display: flex;
+    flex-direction: column;
+}
+.branch img{
+    height: 300px;
+    padding: 5px;
+    transition: transform .2s;
+}
+.branch img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.location{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    box-shadow:0px 0px 20px rgb(0, 0, 0);
+    border-radius: 10px 0 10px 0;
+}
+.location h1{
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 5%;
+    text-align: right;
+}
+.location span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 5px;
+    margin: 10px;
+    color: #181818;
+}
+.location a:hover{
+    color: rgb(130, 88, 88);
+}
+.location .description{
+    width: 100%;
+    margin-top: 5%;
+}
+.location a{
+    text-decoration: none;
+    color: #181818;
+    border-bottom:#181818 1px solid;
+}
+.description h1{
+    color: #181818;
+    text-align: center;
+}
+.inform{
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #181818;
+    margin: 10% 0 0 0;
+    text-align: center;
+}
+.founders{
+    margin: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+.founder-pic img{
+    background-color: black;
+    border-radius: 50%;
+    width: 200px;
+}
+.founder-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 10px;
+}
+.founder-info:hover{
+    color: rgb(130, 88, 88);
+}
+.founder-description h1{
+    font-family: 'Roboto', sans-serif;
+    color: #181818;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 5%;
+    text-align: center;
+}
+.links{
+    display: flex;
+    flex-direction: space-evenly;
+    justify-content: center;
+    gap: 70%;
+    margin: 5%;
+    text-align: center;
+}
+.links li{
+    margin: 2px;
+    list-style-type: none;
+}
+.links li:hover{
+    cursor: pointer;
+    color: rgb(130, 88, 88);
+}
+.link h3{
+    margin-bottom: 10px;
+}
+.foot-wrap{
+    background-color: #181818;
+    width: 100%;
+    display: flex;
+    flex-direction: space-evenly;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+.foot li{
+    list-style-type: none;
+    display: inline-block;
+}
+.foot i{
+    margin: 10px;
+    cursor: pointer;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+.foot i:hover{
+    color: rgb(130, 88, 88);
+}
+.foot{
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    color: rgb(255, 255, 255);
+    margin: 5% 17% 5% 17%;
+}
+.founder-info{
+    padding: 10px;
+    border-radius: 10px 0 10px 0;
+}
+.founder-info:hover{
+    transition-duration: 250ms;
+    transform: scale(1.1);
+    box-shadow:0px 0px 20px rgb(0, 0, 0);
+}

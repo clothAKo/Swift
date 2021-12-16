@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background: #fff6f6;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+html{
+    overflow: scroll;
+}
+nav{
+    width: 100%;
+    position: fixed;
+    opacity: 2.9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #050505;
+    padding: 10px 0 10px 0;
+    z-index: 1;
+}
+nav .brand,.buttons{
+    display: flex;
+    align-items: center;
+    padding: 0 20px 0 20px;
+}
+nav img{
+    margin-left: 10px;
+    height: 35px;
+}
+nav a{
+    text-decoration: none;
+    color: #fff;
+}
+nav li:hover{
+    border-bottom: #fff 1px solid;
+}
+.buttons li{
+    display: inline-block;
+    height: 100%;
+    padding: 10px;
+}
+.current{
+    cursor: default;
+    color:black;
+    background-color: #fff;
+}
+.firstBox{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 10%;
+    max-width: 1200px;
+    overflow: auto;
+    padding: 0 20px;
+}
+
+.content{
+    float: left;
+    width: 40%;
+    padding: 5px;
+}
+.content2{
+    float: right;
+    margin: auto;
+    padding: 30px;
+}
+
+.cars-amp{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: auto;
+    max-width: 1200px;
+    overflow: auto;
+    padding: 0 20px;
+}
+
+.electrified{
+    float: left;
+    width: 30%;
+    padding: 10px;
+    margin-top: 1.5%;
+    text-align: center;
+}
+
+.hybrid{
+    float: left;
+    width: 30%;
+    padding: 30px;
+    text-align: center;
+}
+
+.visionaries{
+    float: left;
+    width: 30%;
+    padding: 10px;
+    margin-top: 1.5%;
+    text-align: center;
+}
+
+.ThirdBox{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: auto;
+    max-width: 1200px;
+    overflow: auto;
+    padding: 0 20px;
+}
+
+.IMP{
+    float: left;
+    width: 40%;
+    padding: 5px;
+    margin-top: 2%;
+    margin-left: 5%;
+}
+.IMP2{
+    float: left;
+    width: 30%;
+    margin-left: 10%;
+    text-align: left;
+}
+
+.FourthBox{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: auto;
+    max-width: 1200px;
+    overflow: auto;
+    padding: 0 20px;
+}
+
+.IMP3{
+    float: left;
+    width: 40%;
+    padding: 5px;
+    margin-top: 2%;
+    margin-left: 5%;
+}
+.IMP4{
+    float: left;
+    width: 30%;
+    margin-left: 10%;
+    text-align: left;
+}
+
+.FifthBox{
+    background: url(/images/img-always-better-big.jpg) no-repeat center center/cover;
+    height: 500px;
+}
+
+.AlwaysBetter{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 50px;
+    max-width: 500px;
+    overflow: auto;
+    padding: 0 20px;
+    background-color:transparent;
+    color: blanchedalmond;
+    float: left;
+}
+
+.links{
+    display: flex;
+    flex-direction: space-evenly;
+    justify-content: center;
+    gap: 20%;
+    margin: 5%;
+    text-align: center;
+}
+.links li{
+    margin: 2px;
+    list-style-type: none;
+}
+.links li:hover{
+    cursor: pointer;
+    color: rgb(130, 88, 88);
+}
+.link h3{
+    margin-bottom: 10px;
+}
+.foot-wrap{
+    background-color: #181818;
+    width: 100%;
+    display: flex;
+    flex-direction: space-evenly;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+.foot li{
+    list-style-type: none;
+    display: inline-block;
+}
+.foot i{
+    margin: 10px;
+    cursor: pointer;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+.foot i:hover{
+    color: rgb(130, 88, 88);
+}
+.foot{
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    color: rgb(255, 255, 255);
+    margin: 5% 17% 5% 17%;
+}
